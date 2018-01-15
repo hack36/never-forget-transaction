@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sunny.login">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/login"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="Sign Up"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Welcome_Activity"
+            android:label="Welcome"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".add_member"
+            android:label="Add Member"
+            android:parentActivityName="Welcome_Activity"/>
+        <activity android:name=".view_member"
+            android:label="Money"
+            android:parentActivityName=".Welcome_Activity"/>
+        <activity android:name=".EditActivity"
+            android:label="Edit Money"
+            android:parentActivityName=".view_member"/>
+    </application>
+
+</manifest>

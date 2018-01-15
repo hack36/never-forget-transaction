@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/krishna" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW USER"
+        android:textColor="#D32F2F"
+        android:textSize="32sp"
+        android:gravity="center_horizontal"
+        android:background="#FFF59D"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/newusername_text_id"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:layout_marginTop="32dp"
+        android:hint="Username"
+        android:textColorHint="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/newpassword_text_id"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/emailid_text_id"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        android:hint="Email Id."
+        android:textColorHint="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/mobilenumber_text_id"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:hint="Mobile No."
+        android:textColorHint="@color/colorPrimaryDark"/>
+    <Button
+        android:id="@+id/proceed_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D50000"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
